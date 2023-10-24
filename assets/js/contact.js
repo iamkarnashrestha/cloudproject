@@ -69,21 +69,25 @@
         senderEmail: email,
         subject: subject,
         message: message,
-        messageId: messageId
       }),
-      contentType: "application/json",
+      
       cache: false,
       success: function (response) {
         // Display the success message
-        $("#success").html(response);
+        console.log(response);
+              $("#success").html("<span class='success' > Message sent successfully.</span>");
+              document.getElementById("contactForm").reset();
+              return true;
       },
       error: function (error) {
+        console.log(error);
         // Display an error message if the request fails
-        $("#error-message").html("<span class='danger' > An error occurred while processing your request.</span> ${error}");
+        $("#error-message").html("<span class='danger' > An error occurred while processing your request.</span>"+error);
+       
       }
     });
-
-    return false; // Prevent the default form submission
+    return false;
+     // Prevent the default form submission
   }
 
   // Add form submission event listener
