@@ -82,7 +82,7 @@
       error: function (error) {
         console.log(error);
         // Display an error message if the request fails
-        $("#error-message").html("<span class='danger' > An error occurred while processing your request.</span>"+error);
+        $("#error-message").html("<span class='danger' > An error occurred while processing your request.</span>");
        
       }
     });
