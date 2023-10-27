@@ -8,9 +8,14 @@
 -Implemented CI/CD for static website hosting using    CodePipeline
 
 # Oct 23
-Created SQS and new Lambda and send the message from First lambda to SQS trigerring new Lambda 
-Connected front end with backend
+ -Created SQS and new Lambda and send the message from First lambda to SQS trigerring new Lambda 
+ -Connected front end with backend
 
 # Oct 24 
-Frontend Validation
+-Frontend Validation
 
+# OCT 26
+-Blog created for CICD
+
+# Oct 27
+-Finished the project
